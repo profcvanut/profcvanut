@@ -254,7 +254,7 @@
     if (!listEl || !statusEl) return;
 
     const lang = normalizeLang(localStorage.getItem("lang") || "pt-BR");
-    statusEl.textContent = (t("pub.status.loading", lang) || "Carregando...");
+    statusEl.textContent = t("pub.status.loading", lang);
 
     let pubs = [];
     try {
@@ -262,8 +262,26 @@
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json();
 
-      pubs = Array.isArray(data) ? data : (data.publications || data.items || []);
+            // Aceita diferentes formatos:
+      // - Array direto
+      // - { publications: [...] }
+      // - { items: [...] }
+      // - { publicacoes: [...] } (formato pt-BR do site)
+      const raw = Array.isArray(data)
+        ? data
+        : (data.publications || data.items || data.publicacoes || []);
+
+      // Normaliza campos para o formato usado no render (title/authors/venue/year/url)
+      pubs = (Array.isArray(raw) ? raw : []).map((p) => {
+        const title = p.title || p.titulo || "";
+        const authors = p.authors || p.autores || "";
+        const venue = p.venue || p.veiculo || p.journal || p.booktitle || "";
+        const year = p.year || p.ano || "";
+        const url = p.url || p.link || p.doi || "";
+        return { ...p, title, authors, venue, year, url };
+      });
       if (!Array.isArray(pubs)) pubs = [];
+
     } catch (err) {
       pubs = [];
       console.error("Falha ao carregar publicacoes.json:", err);
@@ -288,7 +306,7 @@
         const authors = p.authors || "";
         const venue = p.venue || p.journal || p.booktitle || "";
         const year = p.year || "";
-        const url = p.url || p.link || "";
+        const url = p.url || "";
 
         const li = document.createElement("li");
         li.className = "pub-item";
