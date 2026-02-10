@@ -278,3 +278,34 @@ a:hover { text-decoration: underline; }
   .hero { grid-template-columns: 1fr; }
   .hero-photo { max-width: 260px; }
 }
+
+/* Language switch */
+.lang-switch {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  margin-left: 12px;
+}
+
+.lang-btn {
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  background: transparent;
+  padding: 8px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font: inherit;
+  line-height: 1;
+}
+
+.lang-btn.active,
+.lang-btn[aria-pressed="true"] {
+  border-color: rgba(0, 0, 0, 0.35);
+  background: rgba(0, 0, 0, 0.06);
+}
+
+@media (max-width: 720px) {
+  .lang-switch {
+    margin-left: 0;
+  }
+}
+

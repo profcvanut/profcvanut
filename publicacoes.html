@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Publicações | Dr. Cleyton Magalhães</title>
+  <title data-i18n="pub.pageTitle">Publicações | Dr. Cleyton Magalhães</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
   <script defer src="assets/js/main.js"></script>
 </head>
@@ -17,33 +17,44 @@
       <span class="nav-toggle-bar"></span>
     </button>
 
+    <div class="lang-switch" id="langToggle" role="group" aria-label="Idioma">
+      <button type="button" class="lang-btn" data-lang="pt-BR" aria-pressed="false">PT</button>
+      <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+
     <nav class="site-nav" data-nav>
-      <a class="nav-link" href="index.html">Principal</a>
-      <a class="nav-link active" href="publicacoes.html">Publicações</a>
-      <a class="nav-link" href="projetos.html">Projetos de Pesquisa</a>
-      <a class="nav-link" href="time.html">Time</a>
+      <a class="nav-link" href="index.html" data-i18n="nav.home">Principal</a>
+      <a class="nav-link active" href="publicacoes.html" data-i18n="nav.publications">Publicações</a>
+      <a class="nav-link" href="projetos.html" data-i18n="nav.projects">Projetos de Pesquisa</a>
+      <a class="nav-link" href="time.html" data-i18n="nav.team">Time</a>
     </nav>
   </header>
 
   <main class="container">
     <section class="card">
       <div class="split">
-        <h1>Publicações</h1>
+        <h1 data-i18n="pub.title">Publicações</h1>
+
         <a class="button button-outline" target="_blank" rel="noopener noreferrer"
-           href="https://scholar.google.com/citations?user=Wj8icAcAAAAJ&hl=pt-BR">
+           href="https://scholar.google.com/citations?user=Wj8icAcAAAAJ&hl=pt-BR"
+           data-i18n="pub.openScholar">
           Abrir no Google Scholar
         </a>
       </div>
 
       <div class="toolbar">
-        <input id="pubSearch" class="input" type="search" placeholder="Filtrar por título, autores ou ano" />
+        <input id="pubSearch" class="input" type="search"
+               placeholder="Filtrar por título, autores ou ano"
+               data-i18n-placeholder="pub.searchPlaceholder" />
       </div>
 
       <div id="pubStatus" class="muted"></div>
       <ol id="pubList" class="pub-list"></ol>
 
       <p class="muted small">
-        Fonte local: <code>assets/data/publicacoes.json</code>. Você pode atualizar manualmente ou usar o workflow automático do GitHub.
+        <span data-i18n="pub.localSourceLabel">Fonte local:</span>
+        <code>assets/data/publicacoes.json</code>.
+        <span data-i18n="pub.localSourceHint">Você pode atualizar manualmente ou usar o workflow automático do GitHub.</span>
       </p>
     </section>
   </main>

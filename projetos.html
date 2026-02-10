@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Projetos de Pesquisa | Dr. Cleyton Magalhães</title>
+  <title data-i18n="projects.pageTitle">Projetos de Pesquisa | Dr. Cleyton Magalhães</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
   <script defer src="assets/js/main.js"></script>
 </head>
@@ -17,39 +17,39 @@
       <span class="nav-toggle-bar"></span>
     </button>
 
+    <div class="lang-switch" id="langToggle" role="group" aria-label="Idioma">
+      <button type="button" class="lang-btn" data-lang="pt-BR" aria-pressed="false">PT</button>
+      <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+
     <nav class="site-nav" data-nav>
-      <a class="nav-link" href="index.html">Principal</a>
-      <a class="nav-link" href="publicacoes.html">Publicações</a>
-      <a class="nav-link active" href="projetos.html">Projetos de Pesquisa</a>
-      <a class="nav-link" href="time.html">Time</a>
+      <a class="nav-link" href="index.html" data-i18n="nav.home">Principal</a>
+      <a class="nav-link" href="publicacoes.html" data-i18n="nav.publications">Publicações</a>
+      <a class="nav-link active" href="projetos.html" data-i18n="nav.projects">Projetos de Pesquisa</a>
+      <a class="nav-link" href="time.html" data-i18n="nav.team">Time</a>
     </nav>
   </header>
 
   <main class="container">
     <section class="card">
-      <h1>Projetos de Pesquisa</h1>
+      <h1 data-i18n="projects.title">Projetos de Pesquisa</h1>
 
       <article class="project">
-        <h2>Potencializando a Aprendizagem: Uso de Modelos de Linguagem de Grande Escala para Apoiar Estudantes com TDAH</h2>
+        <h2 data-i18n="projects.p1.name">
+          Potencializando a Aprendizagem: Uso de Modelos de Linguagem de Grande Escala para Apoiar Estudantes com TDAH
+        </h2>
 
-        <p>
-          Este projeto tem como objetivo desenvolver uma ferramenta de apoio a estudantes universitários com
-          Transtorno de Déficit de Atenção e Hiperatividade (TDAH), utilizando Modelos de Linguagem de Grande
-          Escala (LLMs) para fornecer recursos personalizados que melhorem a organização, o foco, a gestão do
-          tempo e o desempenho acadêmico.
+        <p data-i18n="projects.p1.desc1">
+          Este projeto tem como objetivo desenvolver uma ferramenta de apoio a estudantes universitários com Transtorno de Déficit de Atenção e Hiperatividade (TDAH), utilizando Modelos de Linguagem de Grande Escala (LLMs) para fornecer recursos personalizados que melhorem a organização, o foco, a gestão do tempo e o desempenho acadêmico.
         </p>
 
-        <p>
-          Espera-se que o projeto resulte no desenvolvimento de uma ferramenta inovadora, baseada em Modelos
-          de Linguagem de Grande Escala (LLMs), capaz de oferecer suporte personalizado a estudantes universitários
-          com TDAH, promovendo melhorias em organização, foco, gestão do tempo e engajamento acadêmico.
-          Além de atender às necessidades individuais dos alunos, a solução deverá fornecer subsídios para docentes
-          e equipes pedagógicas, permitindo um acompanhamento mais preciso e intervenções mais eficazes.
+        <p data-i18n="projects.p1.desc2">
+          Espera-se que o projeto resulte no desenvolvimento de uma ferramenta inovadora, baseada em Modelos de Linguagem de Grande Escala (LLMs), capaz de oferecer suporte personalizado a estudantes universitários com TDAH, promovendo melhorias em organização, foco, gestão do tempo e engajamento acadêmico. Além de atender às necessidades individuais dos alunos, a solução deverá fornecer subsídios para docentes e equipes pedagógicas, permitindo um acompanhamento mais preciso e intervenções mais eficazes.
         </p>
 
         <div class="powered-by" aria-label="Powered by Google">
-          <img class="powered-by-logo" src="assets/img/Google.png" alt="Google" />
-          <div class="powered-by-text">Powered by Google</div>
+          <img class="powered-by-logo" src="assets/img/google.png" alt="Google" />
+          <div class="powered-by-text" data-i18n="projects.poweredBy">Powered by Google</div>
         </div>
       </article>
     </section>
