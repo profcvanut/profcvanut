@@ -88,6 +88,9 @@
       "home.project.p2":
         "Espera-se que o projeto resulte no desenvolvimento de uma ferramenta inovadora, baseada em Modelos de Linguagem de Grande Escala (LLMs), capaz de oferecer suporte personalizado a estudantes universitários com TDAH, promovendo melhorias em organização, foco, gestão do tempo e engajamento acadêmico. Além de atender às necessidades individuais dos alunos, a solução deverá fornecer subsídios para docentes e equipes pedagógicas, permitindo um acompanhamento mais preciso e intervenções mais eficazes.",
 
+      "home.interests.edu.title": "Educação em Engenharia de Software.",
+      "home.interests.edu.text": "Também venho pesquisando Educação em Engenharia de Software, com foco em como estudantes se motivam, quais influências afetam escolhas acadêmicas e quais referências eles identificam como modelos. Um exemplo recente é o estudo sobre diversidade na educação em Engenharia de Software publicado no CSEE&T 2025.",  
+      
       // Projetos
       "projects.pageTitle": "Projetos de Pesquisa | Dr. Cleyton Magalhães",
       "projects.title": "Projetos de Pesquisa",
@@ -145,6 +148,9 @@
         "This project aims to develop a support tool for university students with Attention-Deficit/Hyperactivity Disorder (ADHD) using large language models (LLMs) to provide personalized resources that improve organization, focus, time management, and academic performance.",
       "home.project.p2":
         "The expected outcome is an LLM-based tool that provides personalized support to university students with ADHD, improving organization, focus, time management, and academic engagement. Beyond individual student needs, the solution should also support instructors and academic support teams by enabling closer follow-up and more effective interventions.",
+
+      "home.interests.edu.title": "Software Engineering Education.",
+      "home.interests.edu.text": "I also work on Software Engineering Education, focusing on student motivations, influences on academic choices, and which role models students identify. A recent example is our study on diversity in Software Engineering education published at CSEE&T 2025.",
 
       // Projects
       "projects.pageTitle": "Research Projects | Dr. Cleyton Magalhães",
