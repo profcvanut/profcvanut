@@ -103,6 +103,16 @@
       "projects.poweredBy": "Powered by Google",
       "projects.p1.award": "Este projeto recebeu um award do Google (Google Research Scholar Program) para apoiar o seu desenvolvimento.",
       "projects.p1.googleResearchBtn": "Ver no Google Research Scholar Program",
+    
+      //Eventos
+      "nav.events": "Eventos",
+      "events.pageTitle": "Galeria | Dr. Cleyton Magalhães",
+      "events.title": "Galeria de eventos",
+      "events.subtitle": "Fotos de palestras, mesas redondas e atividades acadêmicas.",
+      "events.p1.title": "Palestrando no AIware 2025",
+      "events.p2.title": "Mesa redonda na Universidade de Calgary",
+      "events.p3.title": "Em sala de aula com alunos de princípios de programação",
+      "events.hint": "Dica: coloque as imagens em assets/img/eventos/ com os nomes indicados no HTML."
     },
 
     en: {
@@ -164,6 +174,16 @@
       "projects.poweredBy": "Powered by Google",
       "projects.p1.award": "This project received a Google award (Google Research Scholar Program) to support its development.",
       "projects.p1.googleResearchBtn": "View on the Google Research Scholar Program website",
+
+      //Eventos
+      "nav.events": "Events",
+      "events.pageTitle": "Gallery | Dr. Cleyton Magalhães",
+      "events.title": "Event gallery",
+      "events.subtitle": "Photos from talks, roundtables, and academic activities.",
+      "events.p1.title": "Speaking at AIware 2025",
+      "events.p2.title": "Roundtable at the University of Calgary",
+      "events.p3.title": "In class with students from Programming Fundamentals",
+      "events.hint": "Tip: place the images in assets/img/eventos/ using the filenames shown in the HTML."
     },
   };
 
